@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap icons (optional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- JS import -->
+
+    <script src="eventHandler.js"></script>
+</head>
+
+<body>
+
+    <div class="container text-center my-3">
+        <h1>Lab 3</h1>
+    </div>
+
+    <hr>
+
+    <section>
+        <h2>Simple counter</h2>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col ">
+                    <button onclick="countClicks()" type="button" class="btn btn-primary text-center  ">Click me</button><span p>The button has been clicked <span id="click" >0 </span> times.
+                    </p>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Toggling element</h2>
+        <div class="container ps-5 pe-5">
+            <div class="row ms-5 me-5">
+                <div class="col-12  "></div>
+
+                <div class="col ms-5 alert alert-primary " role="alert">This is a short section.If you bring <a class="alert-link text-decoration-none" onmouseover="addimage()" onmouseout="removeImage()" href="#cat" role="alert">mouse over here,</a>you can see a nice picture of a cat.</div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+
+                    <img id="cat" src="cat1.webp" alt="cat" span style=" max-width: 200px;
+                    height: 200px;;display: none;">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <hr>
+    <section>
+        <h2>Todo list</h2>
+        <div class="container-flex ">
+            <div class="row g-3 align-items-center ms-3">
+                <div class="col-auto">
+                    <label for="task" class="col-form-label ">Add a new task</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="addTask" class="form-control" aria-describedby="taskInline">
+                </div>
+
+                <div class="col-auto">
+                    <button onclick="addnewTask()" type="button" class="btn btn-info text-center text-white bi bi-plus fs-5"></button>
+                </div>
+            </div>
+            <div class="row ms-3">
+                <div class="col ">
+                    <ol id="myTask">
+                        <li>Get some milk</li>
+
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <h2>Lock system</h2>
+        <div class="container text-center ">
+            <div class="row ms-5 me-5">
+                <div class="col ">
+                    <button onclick="unlockStyle('btn1')" id="btn1" type="button" class="btn btn-danger py-4 px-4 ">Locked</button>
+                </div>
+                <div class="col">
+                    <button onclick="unlockStyle('btn2')" id="btn2" type="button" class="btn btn-danger py-4 px-4 ">Locked</button>
+                </div>
+                <div class="col">
+                    <button onclick="unlockStyle('btn3')" id="btn3" type="button" class="btn btn-danger py-4 px-4 ">Locked</button>
+                </div>
+                <div class="col">
+                    <button onclick="unlockStyle('btn4')" id="btn4" type="button" class="btn btn-danger py-4 px-4  ">Locked</button>
+                </div>
+
+                <div class="col">
+                    <button onclick="unlockLastButton()" id="btn5" type=" button " class="alert alert-secondary text-black text-center px-5 ">Locked</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+</body>
+<script src="Lab03.js "></script>
+
+</html>
