@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="eventHandler.js"></script>
+
+    <title>CST Program</title>
+
+
+</head>
+
+<body class="bg-light">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <div>
+
+        <main>
+            <nav class="navbar navbar-expand-sm  navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-dark" href="#">CST Program</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#program">The Program</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#college">The College</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#teachers">The teachers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                    <a class="nav-link active; text-secondary" aria-current="cst" href="#program">The Program</a>
+                    <a class="nav-link active text-secondary " href="#college">The College</a>
+                    <a class="nav-link active text-secondary" href="#teachers">The Teachers</a>
+
+                </div>
+            </div>
+    </div>
+    </nav>
+    <div class=" text-center ">
+        <h1 class="fs-1 fw-semibold text-secondary ">Computer Science Technology<br><span class=" fs-4 fw-semibold text-primary ">Champlain College in Lennoxville</span></h1>
+
+
+    </div>
+    <div class="bg-secondary rounded m-3 p-2">
+        <h4 class="text-white  pb-2  ms-1" id="program">
+            The Program
+        </h4>
+        <p>
+            <a class="btn btn-info ms-1 " data-bs-toggle="collapse" href="#firstYear" role="button" aria-expanded="false" aria-controls="multiCollapse">First year</a>
+            <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#secondYear" aria-expanded="false" aria-controls="secondYear">Second year</button>
+            <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#thirdYear" aria-expanded="false" aria-controls="thirdYear">Third year</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse pt-1 pb-3 bs-2 ms-1 " id="firstYear">
+                    <div class="card card-body alert-info ">
+                        In the first year, students will learn the basic of computer science. They will learn the Microsoft Office Suite, to install Linux servers and manage computers in general. They will learn the essentials of programming through the use of Java and C#. They
+                        will also use HTML and CSS to create simple websites.
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse pt-1 pb-3 bs-2" id="secondYear">
+                    <div class="card card-body alert-warning">
+                        In the second year, the students will program more and begin building useful applications. They will learn JavaScript, Python and SQL. They will learn how to design complex computer system, implement cybersecurity and will also start programming simple
+                        video games with Unity.
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse pt-1 pb-3 bs-2" id="thirdYear">
+                    <div class="card card-body alert-danger">
+                        In the third year, the students will complete their learning by achieving a few bigger problems using the tools they already know. They shall be able to create more complex web applications, video games, desktop applications and other softwares that can
+                        be installed on many different devices. They complete the program with a 13 week paid internship in a company.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary rounded  m-3 p-2">
+        <h4 class="text-white " id="college">The College</h4>
+        <div class="card border border-secondary border-3 ms-1" style="width: 30rem;">
+            <img src="College.jpg" class="card-img-top" alt="Champlain College" onclick="onClickImage()">
+            <div class="card-body ">
+                <p class="card-text text-center">Champlain College Lennoxville is located just kilometres away from downtown Sherbrooke, in the Estrie Administrative Region. It shares facilities with <a id="linkBishop" href="https://www.ubishops.ca/">Bishop University </a> and offers
+                    pre-university,technical programs, and extensive continuing education services.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-secondary rounded m-3 p-2">
+        <h3 class="text-white" id="teachers">The Teachers</h3>
+        <ul class="list-group fw-bold fs-3 mt-3">
+            <li class="list-group-item">Brent Allen</li>
+            <li class="list-group-item">Jacques St-Pierre</li>
+            <li class="list-group-item">Caroline Fortier</li>
+            <li class="list-group-item">Francis Gauthier</li>
+            <li class="list-group-item">Matthias Harte <span class="badge bg-secondary">New</span></li>
+        </ul>
+    </div>
+    </main>
+
+
+</body>
+<footer class="  fs-6 text-center text-secondary p-1">
+    <p>Made by Nehad Taha</p>
+    <p>Fall 2022 - Client Web Applicationscom </p>
+</footer>
+<script src=" domMainpulation.js"></script>
+</body>
+
+</html>
