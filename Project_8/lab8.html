@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="lab8.js"></script>
+
+</head>
+
+<body onload="onLoadPage()">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex w-100" role="search">
+                    <span class="ms-auto"></span>
+                    <input type="radio" class="btn-check" name="options-outlined" id="light-outlined" autocomplete="off">
+                    <label id="lightModeButton" class="btn btn-outline-warning mx-2" for="light-outlined" onclick="onClickLightMode()">Light mode</label>
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                    <label id="darkModeButton" class="btn btn-outline-secondary" for="danger-outlined" onclick="onClickDarkMode()">Dark mode</label>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="main" class="container-flex bg-light" style="min-height: 100vh;">
+        <h1 id="welcomeText" class="text-center p-3">Welcome!</h1>
+
+        <div class="text-center d-flex">
+            <div class="d-flex w-50 m-auto " role="nameInput">
+                <div class="d-flex m-auto align-items-center">
+                    <label id="label2" for="nameInput" style="min-width: 5em;">Enter your name</label>
+                    <input id="nameInput" type="text" class="form-control m-1" style="max-width: 10em;">
+                    <button id="registerButton" class="btn btn-primary m-1" onclick="onClickSaveName()">Save</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center d-flex mt-3">
+            <div class="d-flex w-25 m-auto " role="colorInput">
+                <div class="m-auto">
+                    <label id="labell" for="colorInput">Enter your favorite color</label>
+                    <input id="colorInput" type="color" class="p-1 m-1">
+                    <button id="colorButton" class="btn btn-primary ms-1" onclick="onClickSaveColor()">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center d-flex justify-content-center mt-3">
+            <div class="d-flex w-25 m-auto " role="colorInput">
+                <button id="clearButton" class="btn btn-danger m-auto" onclick="onClickClear()">Clear preferences</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
